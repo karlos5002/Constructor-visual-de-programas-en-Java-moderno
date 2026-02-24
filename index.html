@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Constructor Visual Java</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🧩 Constructor Visual Java</h1>
+    <div class="contador">
+        Instrucciones: <span id="instructionCount">0</span>
+    </div>
+</header>
+
+<div class="app-container">
+
+    <!-- ================= PANEL IZQUIERDO ================= -->
+    <aside class="palette">
+
+        <h2>📘 Bloques</h2>
+
+        <div class="category variables">
+            <h3>Variables</h3>
+            <div class="block" draggable="true">int a = 5;</div>
+            <div class="block" draggable="true">int b = 3;</div>
+            <div class="block" draggable="true">int c = 10;</div>
+            <div class="block" draggable="true">int result = 0;</div>
+            <div class="block" draggable="true">boolean condition = true;</div>
+            <div class="block" draggable="true">double price = 9.99;</div>
+            <div class="block" draggable="true">String name = "Ana";</div>
+        </div>
+
+        <div class="category operations">
+            <h3>Operaciones</h3>
+            <div class="block" draggable="true">result = a + b;</div>
+            <div class="block" draggable="true">result = a - b;</div>
+            <div class="block" draggable="true">result = a * b;</div>
+            <div class="block" draggable="true">result = a / b;</div>
+            <div class="block" draggable="true">result = result + 1;</div>
+            <div class="block" draggable="true">result = result - 2;</div>
+            <div class="block" draggable="true">result = a % b;</div>
+            <div class="block" draggable="true">double total = price * 3;</div>
+        </div>
+
+        <div class="category conditions">
+            <h3>Condiciones</h3>
+            <div class="block" draggable="true">if (result > 10) { }</div>
+            <div class="block" draggable="true">if (a > b) { }</div>
+            <div class="block" draggable="true">else { }</div>
+            <div class="block" draggable="true">if (condition) { }</div>
+            <div class="block" draggable="true">if (total > 20) { }</div>
+        </div>
+
+        <div class="category loops">
+            <h3>Bucles</h3>
+            <div class="block" draggable="true">for (int i = 0; i < 5; i++) { }</div>
+            <div class="block" draggable="true">while (result < 20) { }</div>
+            <div class="block" draggable="true">
+for (int i = 0; i < 10; i++) { result = result + i; }
+            </div>
+        </div>
+
+        <div class="category logical">
+            <h3>Lógicos</h3>
+            <div class="block" draggable="true">
+condition = (a > b) && (result < 10);
+            </div>
+            <div class="block" draggable="true">
+condition = (name.equals("Ana")) || (b > 5);
+            </div>
+            <div class="block" draggable="true">
+result = (a > b) ? a : b;
+            </div>
+        </div>
+
+        <div class="category assignment">
+            <h3>Asignación</h3>
+            <div class="block" draggable="true">int sum = a + b;</div>
+            <div class="block" draggable="true">double average = (a + b + c) / 3;</div>
+            <div class="block" draggable="true">boolean check = (result > 0);</div>
+        </div>
+
+    </aside>
+
+    <!-- ================= ZONA DE TRABAJO ================= -->
+    <main class="workspace">
+        <h2>🖥 Zona de Trabajo</h2>
+        <div id="dropZone" class="drop-zone">
+            <!-- bloques aquí -->
+        </div>
+    </main>
+
+</div>
+
+<!-- ================= RESULTADO ABAJO ================= -->
+<section class="result-section">
+    <button id="generateBtn">👁 Ver resultado</button>
+    <textarea id="outputCode" readonly></textarea>
+</section>
+
+</body>
+</html>
