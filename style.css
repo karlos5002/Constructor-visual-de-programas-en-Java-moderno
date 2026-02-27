@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f3f4f6;
+}
+
+/* HEADER */
+header {
+    background: #4c97ff;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.contador {
+    background: white;
+    color: #333;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* LAYOUT PRINCIPAL */
+.app-container {
+    display: flex;
+    height: calc(100vh - 70px);
+}
+
+/* PANEL IZQUIERDO */
+.palette {
+    width: 320px;
+    background: #ffffff;
+    overflow-y: auto;
+    padding: 15px;
+    border-right: 2px solid #ddd;
+}
+
+.palette h2 {
+    margin-bottom: 15px;
+}
+
+/* CATEGORÍAS */
+.category {
+    margin-bottom: 20px;
+}
+
+.category h3 {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+/* BLOQUES ESTILO SCRATCH */
+.block {
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 20px;
+    color: white;
+    cursor: grab;
+    font-size: 0.85rem;
+    box-shadow: 0 3px 0 rgba(0,0,0,0.2);
+    transition: transform 0.1s;
+}
+
+.block:active {
+    transform: scale(0.97);
+}
+
+/* COLORES SCRATCH */
+.variables .block { background: #4c97ff; }
+.operations .block { background: #9966ff; }
+.conditions .block { background: #ffbf00; color: black; }
+.loops .block { background: #ff8c1a; }
+.logical .block { background: #59c059; }
+.assignment .block { background: #2bb3c0; }
+
+/* WORKSPACE DERECHA */
+.workspace {
+    flex: 1;
+    padding: 25px;
+    background: #e5f0ff;
+    display: flex;
+    flex-direction: column;
+}
+
+.workspace h2 {
+    margin-bottom: 10px;
+}
+
+.drop-zone {
+    flex: 1;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    overflow-y: auto;
+    border: 3px dashed #bbb;
+}
+
+/* RESULTADO ABAJO */
+.result-section {
+    background: #1e293b;
+    padding: 20px;
+}
+
+#generateBtn {
+    padding: 10px 15px;
+    background: #4c97ff;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 180px;
+    background: #0f172a;
+    color: #00ff88;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: monospace;
+}
