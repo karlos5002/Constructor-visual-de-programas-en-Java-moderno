@@ -1,0 +1,69 @@
+{
+  "categories": [
+    {
+      "id": "variables",
+      "name": "Variables",
+      "icon": "🟦",
+      "cssClass": "variables",
+      "blocks": [
+        { "code": "String texto = \"Hola mundo\";" },
+        { "code": "int i = 0;" },
+        { "code": "int contador = 0;" },
+        { "code": "int edad = 19;" },
+        { "code": "int a = 0;" },
+        { "code": "int suma = 0;" },
+        { "code": "int numero;" },
+        { "code": "int resultado;" }
+      ]
+    },
+    {
+      "id": "operations",
+      "name": "Operaciones",
+      "icon": "🟪",
+      "cssClass": "operations",
+      "blocks": [
+        { "code": "i = i + 1;" },
+        { "code": "contador = contador + 1;" },
+        { "code": "suma = suma + a;" },
+        { "code": "numero = 3;" },
+        { "code": "resultado = 3 + 5;" }
+      ]
+    },
+    {
+      "id": "conditions",
+      "name": "Condiciones",
+      "icon": "🟨",
+      "cssClass": "conditions",
+      "blocks": [
+        { "code": "if (i > 5) { }", "type": "container" },
+        { "code": "if (edad > 18) { println(\"mayor de edad\"); }", "type": "container" },
+        { "code": "else { println(\"menor de edad\"); }", "type": "container" },
+        { "code": "if (a > 10) { println(a); println(\"es mayor que 10\"); }", "type": "container" }
+      ]
+    },
+    {
+      "id": "loops",
+      "name": "Bucles",
+      "icon": "🟧",
+      "cssClass": "loops",
+      "blocks": [
+        { "code": "do { i = i + 1; } while (i < 11);", "type": "container" },
+        { "code": "do { a = a + 1; suma = suma + a; } while (a < 11);", "type": "container" },
+        { "code": "do { a = a + 1; println(\"Hola\"); } while (a < 6);", "type": "container" },
+        { "code": "do { contador = contador + 1; println(contador); } while (contador < 11);", "type": "container" }
+      ]
+    },
+    {
+      "id": "prints",
+      "name": "Impresión",
+      "icon": "🟫",
+      "cssClass": "prints",
+      "blocks": [
+        { "code": "println(texto);" },
+        { "code": "println(suma);" },
+        { "code": "println(numero);" },
+        { "code": "println(resultado);" }
+      ]
+    }
+  ]
+}
